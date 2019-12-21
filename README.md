@@ -8,5 +8,6 @@ The starter code is located in the *htmlStructure* folder, with the solution cod
 Each of the following files has TODOs inside of them. We recommed you visit each file in the following order:
   - htmlStructure/index.html
   - htmlStructure/main.css
+  - htmlStructure/gallery.html
   
 Let us know if you have any questions regarding any of the tasks assigned. We recommend using the slides as a guideline when you are stuck.
