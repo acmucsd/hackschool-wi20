@@ -10,54 +10,54 @@ body {
     padding: 0;
 }
 
-/* Style the navbar to be blue with the links on the right side. */
+/* TODO: Style the navbar to be blue with the links on the right side. */
 #navbar {
 }
 
-/* Style the "ACM UCSD Meme Gen" heading to be away from the left side, using the margin-left property. Also make the text white.*/
+/* TODO: Style the "ACM UCSD Meme Gen" heading to be away from the left side, using the margin-left property. Also make the text white.*/
 #navbar > h1 {
 }
 
-/* Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
+/* TODO: Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
 
 
-/* Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
+/* TODO: Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
 
 
-/* Style the navigation links to have a darker background color when the links is an "active" or clicked. */
+/* TODO: Style the navigation links to have a darker background color when the links is an "active" or clicked. */
 
 
-/* Style the contents div to ensure that every element will align in the center. */
+/* TODO: Style the contents div to ensure that every element will align in the center. */
 
 
-/* Style the meme image to ensure that it would only take up about half of the screen (vh unit recommended). */
+/* TODO: Style the meme image to ensure that it would only take up about half of the screen (vh unit recommended). */
 
 
-/* Style the textboxes to have the direction of the textboxes be vertical. */
+/* TODO: Style the textboxes to have the direction of the textboxes be vertical. */
 .textboxes {
 }
 
-/* Style each individual textbox to be a smaller width. */
+/* TODO: Style each individual textbox to be a smaller width. */
 
 
-/* Style the submit meme button to have a margin-top value of 10px. */
+/* TODO: Style the submit meme button to have a margin-top value of 10px. */
 .button {
 }
 
 /** For gallery.html file.**/
 
-/* Style the memes div to be equal to 100% width with a flex display. */
+/* TODO: Style the memes div to be equal to 100% width with a flex display. */
 .memes {
 }
 
-/* Style the meme-card to have a solid border with color blue. Also, make a set width for each meme-card.*/
+/* TODO: Style the meme-card to have a solid border with color blue. Also, make a set width for each meme-card.*/
 .meme-card {
 }
 
-/* Style the images in the meme-card to have teh same width as its parent div. */
+/* TODO: Style the images in the meme-card to have teh same width as its parent div. */
 .meme-card > img {
 }
 
-/* Style the footer so that the height of it is 200px. */
+/* TODO: Style the footer so that the height of it is 200px. */
 #footer {
 }
