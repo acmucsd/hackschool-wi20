@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+* {
+    font-family: Nunito, "sans-serif";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar to be blue with the links on the right side. */
+#navbar {
+}
+
+/* Style the "ACM UCSD Meme Gen" heading to be away from the left side, using the margin-left property. Also make the text white.*/
+#navbar > h1 {
+}
+
+/* Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
+
+
+/* Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
+
+
+/* Style the navigation links to have a darker background color when the links is an "active" or clicked. */
+
+
+/* Style the contents div to ensure that every element will align in the center. */
+
+
+/* Style the meme image to ensure that it would only take up about half of the screen (vh unit recommended). */
+
+
+/* Style the textboxes to have the direction of the textboxes be vertical. */
+.textboxes {
+}
+
+/* Style each individual textbox to be a smaller width. */
+
+
+/* Style the submit meme button to have a margin-top value of 10px. */
+.button {
+}
+
+/* Style the footer so that the height of it is 200px. */
+#footer {
+}

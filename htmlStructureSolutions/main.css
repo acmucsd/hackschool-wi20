@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+* {
+    font-family: Nunito, "sans-serif";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar to be blue with the links on the right side. */
+#navbar {
+    background-color: #22ACEA;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Style the "ACM UCSD Meme Gen" heading to be away from the left side, using the margin-left property. Also make the text white.*/
+#navbar > h1 {
+    color: white;
+    margin-left: 5px;
+}
+
+/* Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
+#navlinks {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    width: 200px;
+}
+
+/* Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
+.links {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links:hover {
+    font-weight: bold;
+}
+
+/* Style the navigation links to have a darker background color when the links is an "active" or clicked. */
+.links:active {
+    background-color: rgb(26, 124, 170);
+}
+
+/* Style the contents div to ensure that every element will align in the center. */
+#content {
+    text-align: center;
+}
+
+/* Style the meme image to ensure that it would only take up about half of the screen (vh unit recommended). */
+.memeImg {
+    height: 50vh;
+    width: auto;
+}
+
+/* Style the textboxes to have the direction of the textboxes be vertical. */
+.textboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+/* Style each individual textbox to be a smaller width. */
+.textbox {
+    align-self: center;
+    width: 200px;
+}
+
+/* Style the submit meme button to have a margin-top value of 10px. */
+.button {
+    margin-top: 10px;
+}
+
+/* Style the footer so that the height of it is 200px. */
+#footer {
+    height: 200px;
+}
