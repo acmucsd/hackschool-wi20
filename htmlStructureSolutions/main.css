@@ -79,6 +79,28 @@ body {
     margin-top: 10px;
 }
 
+
+/** For gallery.html file.**/
+
+/* Style the memes div to be equal to 100% width with a flex display. */
+.memes {
+    display: flex;
+    width: 100%;
+}
+
+/* Style the meme-card to have a solid border with color blue. Also, make a set width for each meme-card.*/
+.meme-card {
+    border-color: blue;
+    border-style: solid;
+    margin: 10px;
+    width: 300px;
+}
+
+/* Style the images in the meme-card to have teh same width as its parent div. */
+.meme-card > img {
+    width: 100%;
+}
+
 /* Style the footer so that the height of it is 200px. */
 #footer {
     height: 200px;
