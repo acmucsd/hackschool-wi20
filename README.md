@@ -1,16 +1,12 @@
-# Hack School Winter 2020
+# Project Part 1: Making the HTML/CSS Front-End Structure of Our Application
 Project Information for Part 1.
 
 For this section of the project, we are going to be designing each of the front-end components we need for the project in HTML & CSS.  
   
-Here are the following HTML pages & components we will need to build:  
-  
-- Navigation Bar  
-  
-**Meme Generator**  
-- Meme picture which would show on the left hand side.  
-- Text boxes to write the contents of the meme & the user.
-- One button, which allow the user to submit their name.  
+The starter code is located in the *htmlStructure* folder, with the solution code in the *htmlStructureSolution* folder. We recommend you work off the *htmlStructure* folder and look at the solution code at the end. 
 
-**Meme Gallery**  
-- Each "meme" component, containing the meme picture with other information such as the user who authored the meme and a like button.
+Each of the following files has TODOs inside of them. We recommed you visit each file in the following order:
+  - htmlStructure/index.html
+  - htmlStructure/main.css
+  
+Let us know if you have any questions regarding any of the tasks assigned. We recommend using the slides as a guideline when you are stuck.
