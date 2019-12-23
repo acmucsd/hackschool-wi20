@@ -6,7 +6,6 @@ Taught by: Daniel Truong
 
 # Important Links
 [ACM UCSD Portal](https://acmucsd.com/)  
-[Slides](http://acmurl.com/hackschoolpt2/)
 
 # Resources
 - [What is JavaScript?](https://en.wikipedia.org/wiki/JavaScript)
