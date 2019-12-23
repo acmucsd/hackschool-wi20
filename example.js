@@ -1,0 +1,1 @@
+// Figure out some example prompt the students could use to learn JavaScript
