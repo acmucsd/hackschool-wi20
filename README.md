@@ -2,7 +2,7 @@
 
 Welcome to our 2nd workshop where we will go over the language of JavaScript as well as setting up a server using nodejs.
 
-Taught by: Daniel Truong & Kyle Hu
+Taught by: Daniel Truong
 
 # Important Links
 [ACM UCSD Portal](https://acmucsd.com/)  
