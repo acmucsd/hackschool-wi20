@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Meme Generator</title>
+        <!-- Let's link the main.css to this index.html file -->
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="navbar">
+            <h1>ACM UCSD Meme Gen</h1>
+            <!-- Create a div with the id, "navlinks", which will contain two links with names called Generator and Gallery. Also
+                 name the class of these links "links". -->
+            <div id="navlinks">
+                <a class="links" href="index.html">Generator</a>
+                <a class="links" href="gallery.html">Gallery</a>
+            </div>
+        </div>
+        <div id="content">
+            <h2>Meme Generator</h2>
+            <!-- Put the badmeme.jpeg image (or any image) into the line below. -->
+            <img class="memeImg" src="../assets/images/badmeme.jpeg" />
+            <div class="textboxes">
+            <!-- Create 4 textboxes, each of which will have the following headings, chronologically. -->
+                <h3>Text1</h3>
+                <textarea class="textbox" name="text1" cols="50" rows="2"></textarea>
+                <h3>Text2</h3>
+                <textarea class="textbox" name="text2" cols="50" rows="2"></textarea>
+                <h3>Text3</h3>
+                <textarea class="textbox" name="text3" cols="50" rows="2"></textarea>
+                <h3>Created by?</h3>
+                <textarea class="textbox" name="name" cols="50" rows="2"></textarea>
+            </div>
+            <button class="button" type="button">Submit meme!</button>
+        </div>
+        <div id="footer">
+
+        </div>
+    </body>
+
+</html>
