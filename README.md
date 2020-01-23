@@ -20,3 +20,36 @@ Part 4 (2/19) - [APIs, HTTP, and How the Web Works] - [Slides Presentation]
 Part 5 (2/26) - [Storing Data with Databases (MongoDB)] - [Slides Presentation]
 
 Part 6 (3/04) - [Deploying with Heroku] - [Slides Presentation]
+
+# Required Programs to Download for These Workshops
+  
+**Git**
+- Windows: Download Git Bash [here](https://git-scm.com/downloads)
+- Others: Linux and Mac should have Git installed by default, but if not, download [here](https://git-scm.com/downloads)
+
+**node.js**
+- Windows: Download node.js [here](https://nodejs.org/en/download/)
+- Others: Follow the following steps
+  - Run the command `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash`
+  - Restart terminal and run `npm install node`
+
+**MongoDB**
+- Follow the following steps:
+  - Go to https://www.mongodb.com/download-center/community 
+  - Select current version
+  - Select OS
+  - Package field should be set by default
+  - Click “download”
+  - Run installation wizard
+
+**Postman**
+- We will be using this for the API workshops. Download [here](https://www.getpostman.com/downloads/)
+
+**Heroku**
+- Windows: Download [here](https://acmurl.com/herokuinstall)
+- Linux: Run the command `sudo snap install heroku --classic`
+- Mac: Run the command `brew install heroku/brew/heroku`
+
+
+
+
