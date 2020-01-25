@@ -158,6 +158,8 @@ Next, run the following commands:
 
 The *npm install* command installs a package into our application, which allows it to be imported. Next, run *node app.js* in order to run the application. Now, the terminal should output "Server listeing on port 3001". 
 
+**Tip: I recommend install nodemon into your global computer (allows changes in server to be run automatically without needing to restart the server manually). To do this, type the command `npm install nodemon -g`. Then, go to the package.json file --> scripts --> start --> change "node server.js" to "nodemon server.js".**
+
 # Creating Routes and Pages
 When accessing certain endpoints, we can send certain responses. Here are a few examples:  
 ```
