@@ -1,0 +1,4 @@
+solutions/node_modules
+solutions/meme-gen/node_modules
+solutions/server/node_modules
+package-lock.json

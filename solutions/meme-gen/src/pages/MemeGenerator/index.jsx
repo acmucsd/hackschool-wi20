@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.css';
-import badMeme from '../../images/badmeme.jpeg';
 import TextBox from '../../components/TextBox';
+import TemplateSelect from '../../components/TemplateSelect'
+
+import {reselectMeme} from '../../utils';
 
 class MemeGenerator extends React.Component {
     constructor() {
@@ -20,11 +22,54 @@ class MemeGenerator extends React.Component {
                     this.setState({
                         memeArray: memes,
                         currentMeme: memes[0],
-                        numOfTexts: memes[0].box_count
+                        numOfTexts: memes[0].box_count,
+                        textArray: [],
+                        createdBy: ""
                     });
                 }
-
             });
+    }
+
+    handleMemeText = (index, text) => {
+        this.state.textArray[index] = text;
+    };
+
+    handleCreatedBy = (index, text) => {
+        this.setState({
+            createdBy: text
+        });
+        console.log(this.state.createdBy);
+    }
+
+    reselectMeme = (meme) => {
+        this.setState({
+            memeArray: this.state.memeArray,
+            currentMeme: meme, 
+            numOfTexts: meme.box_count,
+            textArray: this.state.textArray
+        });
+    };
+
+    uploadMeme = () => {
+        fetch('/sendmeme', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                meme: this.state.currentMeme,
+                textArray: this.state.textArray,
+                numOfTexts: this.state.numOfTexts,
+                createdBy: this.state.createdBy
+            })
+        }).then(response => {
+            if (response.status == 200) { 
+                window.location.href = "/gallery"; 
+            }
+            else {
+                console.log(response);
+            }
+        })
     }
 
     render() {
@@ -38,16 +83,27 @@ class MemeGenerator extends React.Component {
             numList.push(i);
         }
         const textboxes = numList.map((num) => 
-            <TextBox text={"Text " + num} key={num} />
+            <TextBox text={"Text " + num} key={num} index={num-1} handleText={this.handleMemeText}/>
         );
+        const memeSelects = this.state.memeArray.map((meme) => 
+            <TemplateSelect
+                key={meme.id}
+                meme={meme}
+                reselectMeme={() => this.reselectMeme(meme)}
+            />
+        );
+
         return (
             <div id="content">
             <h2>Meme Generator</h2>
             <img className="memeImg" src={this.state.currentMeme.url} alt="meme template"/>
             <div className="textboxes">
                 {textboxes}
+                <TextBox text="Created By?" index={0} handleText={this.handleCreatedBy}/>
             </div>
-            <button className="button" type="button">Submit meme!</button>
+            <button className="button" type="submit" onClick={() => this.uploadMeme()}>Submit meme!</button>
+            <div className="memeTemplates"></div>
+                {memeSelects}
             </div>
         );
     }
