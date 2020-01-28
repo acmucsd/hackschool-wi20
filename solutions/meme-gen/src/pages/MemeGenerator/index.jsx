@@ -11,7 +11,9 @@ class MemeGenerator extends React.Component {
         this.state = {
             memeArray: null,
             currentMeme: null,
-            numOfTexts: 0
+            numOfTexts: 0,
+            textArray: [],
+            createdBy: ""
         };
         // Grabs memes from imgflip
         fetch('https://api.imgflip.com/get_memes')
@@ -38,15 +40,12 @@ class MemeGenerator extends React.Component {
         this.setState({
             createdBy: text
         });
-        console.log(this.state.createdBy);
     }
 
     reselectMeme = (meme) => {
         this.setState({
-            memeArray: this.state.memeArray,
             currentMeme: meme, 
             numOfTexts: meme.box_count,
-            textArray: this.state.textArray
         });
     };
 

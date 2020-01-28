@@ -1,5 +1,5 @@
 const Meme = require('../meme');
-
+const config = require("../config.json");
 const express = require('express');
 const fetch = require("node-fetch");
 const qs = require('qs');
@@ -23,11 +23,10 @@ app.use(bodyParser.json());
  * 4) /delete - POST request which deletes a meme given a query. Will not be implemented to front-end.
  */
 
- let tempData = [];
- app.post("/sendmeme", (req, res) => {
+let tempData = [];
+app.post("/sendmeme", (req, res) => {
     // TODO
     const params = req.body;
-
     fetch("https://api.imgflip.com/caption_image", {
         method: 'post',
         headers: {
@@ -35,8 +34,8 @@ app.use(bodyParser.json());
         },
         body: qs.stringify({
             template_id: params.meme.id,
-            username: "numberonetruong",
-            password: "DanT3783",
+            username: config.username,
+            password: config.password,
             boxes: params.textArray.map((text) => {
                 return { "text": text };
             })
@@ -55,22 +54,17 @@ app.use(bodyParser.json());
                 res.status(500).send("API call to caption the image failed.");
             }
         });
- });    
+});    
 
- app.get("/getmeme", (req, res) => {
+app.get("/getmeme", (req, res) => {
     // TODO
     res.send(tempData);
- });
+});
 
- app.post("/likememe", (req, res) => {
+app.post("/likememe", (req, res) => {
     // Next time in Workshop 5: Databases. 
- });
+});
 
- app.post("/delete", (req, res) => {
+app.post("/delete", (req, res) => {
     // Next time in Workshop 5: Databases. 
- });
-
-// Method to convert image to the final meme.
-const convertToFinal = (params) => {
-
-}
+});
