@@ -1,0 +1,23 @@
+{
+  "name": "hackschool-wi20",
+  "version": "1.0.0",
+  "description": "This workshop will focus on making an API as well as linking the API with the front-end.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "concurrently --kill-others-on-fail \"cd meme-gen && npm start\" \"cd server && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acmucsd/hackschool-wi20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acmucsd/hackschool-wi20/issues"
+  },
+  "homepage": "https://github.com/acmucsd/hackschool-wi20#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "qs": "^6.9.1"
+  }
+}

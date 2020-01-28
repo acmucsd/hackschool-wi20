@@ -1,0 +1,5 @@
+/* Style the memes div to be equal to 100% width with a flex display. */
+.memes {
+    display: flex;
+    width: 100%;
+}
