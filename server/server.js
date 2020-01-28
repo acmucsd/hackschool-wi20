@@ -1,6 +1,6 @@
 const Meme = require('../meme');
-const config = require("../config.json");
-// const config = process.env;
+// const config = require("../config.json");
+const config = process.env;
 const express = require('express');
 const fetch = require("node-fetch");
 const qs = require('qs');
