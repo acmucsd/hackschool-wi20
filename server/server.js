@@ -24,12 +24,12 @@ let memedb;
 
 MongoClient.connect(url, options, (err, db) => {
     if (err) throw err;
-    // const dbo = db.db("memedb");
-    db.createCollection("memes", (err, res) => {
+    const dbo = db.db("heroku_srf37p9d");
+    dbo.createCollection("memes", (err, res) => {
         if (err) throw err;
         console.log("Meme Collection created.");
     });
-    database = db;
+    database = dbo;
     memedb = database.collection("memes");
 });
 
