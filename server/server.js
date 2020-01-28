@@ -1,11 +1,13 @@
 const Meme = require('../meme');
-// const config = require("../config.json");
-const config = process.env;
+const config = require("../config.json");
+// const config = process.env;
 const express = require('express');
 const fetch = require("node-fetch");
 const qs = require('qs');
 // Let's add a body-parser module.
 const bodyParser = require('body-parser');
+// Line needed for deployment.
+const path = require('path');
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -38,6 +40,10 @@ app.listen(port, () => {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+// Added line for deployment.
+app.use(express.static(path.join(__dirname, 'build')));
+
+
 /** 
  * Let's outline the API calls that we will need.
  * 1) /sendmeme - POST request when the user finishes their meme and wants to upload it to the database.
@@ -55,8 +61,8 @@ app.post("/sendmeme", (req, res) => {
         },
         body: qs.stringify({
             template_id: params.meme.id,
-            username: config.username,
-            password: config.password,
+            username: config.IMGFLIP_USERNAME,
+            password: config.IMGFLIP_PASSWORD,
             boxes: params.textArray.map((text) => {
                 return { "text": text };
             })
@@ -101,3 +107,8 @@ app.post("/delete", (req, res) => {
         res.send(obj);
     });
 });
+
+// Added line for deployment
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });

@@ -4,7 +4,8 @@
   "description": "This workshop will focus on making an API as well as linking the API with the front-end.",
   "main": "index.js",
   "scripts": {
-    "watch": "concurrently --kill-others-on-fail \"cd meme-gen && npm start\" \"cd server && npm start\" "
+    "watch": "concurrently --kill-others-on-fail \"cd meme-gen && npm start\" \"cd server && npm start\" ",
+    "server": "cd server && node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/acmucsd/hackschool-wi20#readme",
   "dependencies": {
     "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
     "qs": "^6.9.1"
   }
 }

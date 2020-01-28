@@ -8,3 +8,7 @@ Steps
 - heroku config:set IMGFLIP_USERNAME=<your username>
 - heroku config:set IMGFLIP_PASSWORD=<your password>
 - heroku addons:create mongolab:sandbox
+- heroku buildpacks:set heroku/nodejs
+- Put ```"homepage":"./"``` in the package.json in "meme-gen"
+- run ```npm run build``` in the meme-gen
+- 

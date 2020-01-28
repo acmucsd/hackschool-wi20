@@ -1,5 +1,5 @@
 {
-    "username": "numberonetruong",
-    "password": "DanT3783",
-    "mongoURL": "mongodb://localhost:27017"
+    "IMGFLIP_USERNAME": "<your username>",
+    "IMGFLIP_PASSWORD": "<your password>",
+    "MONGODB_URI": "mongodb://localhost:27017"
 }
