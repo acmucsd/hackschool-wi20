@@ -12,7 +12,7 @@ const port = process.env.PORT || 3001;
 // Connect to MongoDB database
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
-const url = config.mongoURL;
+const url = config.MONGODB_URI;
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true
