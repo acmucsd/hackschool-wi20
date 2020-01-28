@@ -1,5 +1,5 @@
 {
-    "username": "numberonetruong",
-    "password": "DanT3783",
+    "username": "<your_username>",
+    "password": "<your password>",
     "mongoURL": "mongodb://localhost:27017"
 }
