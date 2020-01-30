@@ -21,16 +21,16 @@ body {
 /* TODO: Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
 
 
-/* TODO: Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
+/* TODO: Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a text-decoration of none. */
 
 
-/* TODO: Style the navigation links to have a darker background color when the links is an "active" or clicked. */
+/* TODO: Style the navigation links to have a darker background color when the links is an "active" or clicked. We use rgb(26, 124, 170). */
 
 
 /* TODO: Style the contents div to ensure that every element will align in the center. */
 
 
-/* TODO: Style the meme image to ensure that it would only take up about half of the screen (vh unit recommended). */
+/* TODO: Style the meme image to have a width of 500px. */
 
 
 /* TODO: Style the textboxes to have the direction of the textboxes be vertical. */
@@ -60,4 +60,22 @@ body {
 
 /* TODO: Style the footer so that the height of it is 200px. */
 #footer {
+}
+
+/** Extra: Media Queries **/
+/* When the width is 600px or lower, perform the following actions. */
+@media screen and (max-width: 600px) {
+    /* For the "ACM UCSD Meme Gen" header, make the margin-left -300px and the opacity 0. */
+    #navbar > h1 {
+        
+    }
+
+    /* For the div containing the links, change the justify-content to "space-around" and the width to 100%. */
+    #navlinks {
+        
+    }
+    /* For the meme image, make the width about 90%. */
+    .memeImg {
+        
+    }
 }
