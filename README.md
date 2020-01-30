@@ -9,7 +9,7 @@ Starting from Workshop 1, each starter code will be in different branches of the
 
 Part 0 (1/22) - [Git/Unix](workshop-0-git-unix) - [Slides Presentation](http://acmurl.com/hackschool0)  
   
-Part 1 (1/29) - [Intro to Front-end Development (HTML, CSS)] - [Slides Presentation] - [Source Folder]
+Part 1 (1/29) - [Intro to Front-end Development (HTML, CSS)](workshop-1-intro-to-front-end) - [Slides Presentation](http://acmurl.com/hackschool1) - [Project Starter-Code & Solution Code](https://github.com/acmucsd/hackschool-wi20/tree/project-pt1)
 
 Part 2 (2/05) - [Intro to Back-end Development (Node.js)] - [Slides Presentation] - [Source Folder]
 
