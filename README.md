@@ -3,7 +3,10 @@ Repository for all content of Hack School Winter 2020.
 
 Welcome! This repository contains slides and examples used in all parts of Hackschool. If you're just looking, feel free to play around with any of these examples!
 
-Starting from Workshop 1, each starter code will be in different branches of the repository. 
+This repository might seem complicated, so here is the rundown of how it works. Essentially, each folder in the master branch will be used to store example code that is shown in the workshop. However, these folders will not contain the project code for the final meme generator. 
+
+## You don't have to worry about missing a Hack School!
+The starter code for the project will exist in the different branches of this repostory! As such, no need to feel like missing a single workshop will mess up your ability to learn! We encourage you to come out to all the workshops you can.
 
 # Schedule
 
