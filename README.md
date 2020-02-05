@@ -1,4 +1,4 @@
-# Hack School Part 2 - Intro to Javascript (node.js)
+# Project Part 2 - Intro to Javascript and Starting to Make our Server
 
 Welcome to our 2nd workshop where we will go over the language of JavaScript as well as setting up a server using nodejs.
 
