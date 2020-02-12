@@ -3,7 +3,7 @@
     border-color: blue;
     border-style: solid;
     margin: 10px;
-    width: 300px;
+    width: 100%;
 }
 
 /* Style the images in the meme-card to have teh same width as its parent div. */
