@@ -1,4 +1,4 @@
-# Hack School Part 2 - Intro to Javascript (node.js)
+# Hack School Part 3 - React
 
 Welcome to our 3rd workshop where we will go over the React front-end framework.
 
