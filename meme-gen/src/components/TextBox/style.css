@@ -1,0 +1,5 @@
+/* Style each individual textbox to be a smaller width. */
+.textbox {
+    align-self: center;
+    width: 200px;
+}

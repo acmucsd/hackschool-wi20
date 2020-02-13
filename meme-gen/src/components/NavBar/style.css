@@ -1,0 +1,38 @@
+/* Style the navbar to be blue with the links on the right side. */
+#navbar {
+    background-color: #22ACEA;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Style the "ACM UCSD Meme Gen" heading to be away from the left side, using the margin-left property. Also make the text white.*/
+#navbar > h1 {
+    color: white;
+    margin-left: 5px;
+}
+
+/* Style the navigation links to be aligned with the heading. Set the width of the navigation links to be a fixed length. */
+#navlinks {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    width: 200px;
+}
+
+/* Style the navigation links to not have the normal underline effect, and when the mouse hovers over, give the links a different effect. */
+.links {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links:hover {
+    font-weight: bold;
+}
+
+/* Style the navigation links to have a darker background color when the links is an "active" or clicked. */
+.links:active {
+    background-color: rgb(26, 124, 170);
+}

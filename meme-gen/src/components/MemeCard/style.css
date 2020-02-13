@@ -1,0 +1,11 @@
+.meme-card {
+    border-color: blue;
+    border-style: solid;
+    margin: 10px;
+    width: 300px;
+}
+
+/* Style the images in the meme-card to have teh same width as its parent div. */
+.meme-card > img {
+    width: 100%;
+}
