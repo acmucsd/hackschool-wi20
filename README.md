@@ -14,11 +14,11 @@ Part 0 (1/22) - [Git/Unix](workshop-0-git-unix) - [Slides Presentaacmurl.com/hac
   
 Part 1 (1/29) - [Intro to Front-end Development (HTML, CSS)](workshop-1-intro-to-front-end) - [Slides Presentation](http://acmurl.com/hackschool1) - [Project Starter-Code & Solution Code](https://github.com/acmucsd/hackschool-wi20/tree/project-pt1)
 
-Part 2 (2/05) - [Intro to Back-end Development (Node.js)] - [Slides Presentation] - [Source Folder]
+Part 2 (2/05) - [Intro to Back-end Development (Node.js)] - [Slides Presentation](http://acmurl.com/hackschool2) - [Source Folder]
 
 Part 3 (2/12) - [React] - [Slides Presentation](acmurl.com/hackschool3) - [Source Folder]
 
-Part 4 (2/19) - [APIs, HTTP, and How the Web Works] - [Slides Presentation]
+Part 4 (2/19) - [APIs, HTTP, and How the Web Works](http://acmurl.com/hackschool4) - [Slides Presentation]
 
 Part 5 (2/26) - [Storing Data with Databases (MongoDB)] - [Slides Presentation]
 
