@@ -20,7 +20,7 @@ this.setState({
     createdBy: "" // String indicating who the meme is created by
 });
 ```
-- Then, after setting the state, write the following lines to fetch memes from this API.
+- (TODO): Then, after setting the state, write the following lines to fetch memes from this API.
 ```javascript
 fetch('https://api.imgflip.com/get_memes')
     .then(response => response.json())
@@ -56,7 +56,7 @@ if (!this.state.memeArray) {
     onClick={props.reselectMeme}
 />
 ```
-- Dynamically render a TemplateSelect Component for every meme in the meme array. In the render() function, before the return statement, input the following line:
+- Back in the MemeGenerator component, dynamically render a TemplateSelect Component for every meme in the meme array. In the render() function, before the return statement, input the following line:
 ```javascript
 const memeSelects = this.state.memeArray.map((meme) => 
     <TemplateSelect
@@ -97,7 +97,7 @@ const textboxes = numList.map((num) =>
 ```
 *Notice that we have added an index prop and handleText prop to TextBox.*
 
-- In the div with the className="textboxes", delete the first 3 textboxes and replace with {textboxes}:
+- In the div with the className="textboxes", delete the current text boxes and replace with {textboxes}:
 ```javascript
 <div className="textboxes">
     {textboxes}
@@ -129,7 +129,7 @@ handleCreatedBy = (index, text) => {
     this.setState({
         createdBy: text
     });
-}
+};
 ```
 - Lets add an *onClick* attribute to the submit button, which points to a callback function that executes a function called *uploadMeme*, which we will define. 
 ```js
