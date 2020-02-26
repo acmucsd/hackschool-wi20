@@ -10,7 +10,7 @@ The starter code for the project will exist in the different branches of this re
 
 # Schedule
 
-Part 0 (1/22) - [Git/Unix] - [Slides Presentaacmurl.com/hackschool3)tion](http://acmurl.com/hackschool0)  
+Part 0 (1/22) - [Git/Unix] - [Slides Presentation](http://acmurl.com/hackschool0)  
   
 Part 1 (1/29) - [Intro to Front-end Development (HTML, CSS)] - [Slides Presentation](http://acmurl.com/hackschool1) - [Project Starter-Code & Solution Code](https://github.com/acmucsd/hackschool-wi20/tree/project-pt1)
 
