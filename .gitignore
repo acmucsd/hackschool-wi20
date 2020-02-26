@@ -1,3 +1,5 @@
 solutions/node_modules
 solutions/server/node_modules
 server/node_modules
+
+./config.json
