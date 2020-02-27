@@ -67,7 +67,7 @@ app.post("/sendmeme", (req, res) => {
             console.log(data);
             if (data.success) {
                 const finalURL = data.data.url;
-                const meme = new Meme(finalURL, params.creator);
+                const meme = new Meme(finalURL, params.creator, memedb);
                 res.status(200).send("Successful request.");
             } else {
                 res.status(500).send("API call to caption the image failed.");
