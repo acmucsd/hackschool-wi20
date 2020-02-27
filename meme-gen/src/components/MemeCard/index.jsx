@@ -15,13 +15,23 @@ class LikeButton extends React.Component {
     // We make an arrow function to show that this method is part of this class. 
     toggleLikes = (event) => {
         event.preventDefault();
-        // Sets a increment value to be 1 or -1. so that we either increase the number of likes or decrease the number of likes.
-        console.log(this);
-        const subOrAdd = this.state.likedStatus ? -1 : 1;
-        this.setState({
-            likedStatus: !this.state.likedStatus,
-            likes: this.state.likes + subOrAdd
-        });
+        fetch("/likememe", {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: this.props.id,
+                likedStatus: this.state.likedStatus,
+                likes: this.state.likes
+            })
+        }).then(response => response.json())
+          .then(response => {
+            this.setState({
+                likedStatus: response.isLiked,
+                likes: response.likes
+            });
+        })
     }
     
     render() {

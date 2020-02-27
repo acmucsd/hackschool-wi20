@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 // Connect to MongoDB database
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
-const url = "mongodb://localhost:27017/memedb";
+const url = "mongodb://localhost:27017/mydb";
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -76,14 +76,35 @@ app.post("/sendmeme", (req, res) => {
 });    
 
 app.get("/getmeme", (req, res) => {
-    // TODO
-    res.send(tempData);
+    // The {} is the query portion.
+    memedb.find({}).toArray((err, result) => {
+        if (err) throw err;
+        res.send(JSON.stringify(result));
+    });
 });
 
+/*
+ * TODO: This endpoint will get the meme from the database, and update the document to either increase by one like 
+ *       or decrease by one like. 
+ * 
+ * Parameters given (as strings):
+ *      1) "id": id of the meme or document
+ *      2) "likedStatus": boolean value indicating whether the document has been liked or not
+ *      3) "likes": number of likes the meme currently has
+ * 
+ * Use this link for documentation: https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
+ */
 app.post("/likememe", (req, res) => {
-    // Next time in Workshop 5: Databases. 
+    // Workshop 5: Databases. F
+
 });
 
+/*
+ * TODO: This endpoint will delete a meme from the database with the given queries in the param.
+ * 
+ * Parameters can be anything. 
+ * Use this link for documentation: https://docs.mongodb.com/manual/reference/method/db.collection.deleteOne/
+ */
 app.post("/delete", (req, res) => {
-    // Next time in Workshop 5: Databases. 
+    // Workshop 5: Databases. 
 });
