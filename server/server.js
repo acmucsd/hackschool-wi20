@@ -15,6 +15,28 @@ app.listen(port, () => {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+// Connect to MongoDB database
+const mongo = require('mongodb');
+const MongoClient = mongo.MongoClient;
+const url = "mongodb://localhost:27017/memedb";
+const options = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+};
+let database;
+let memedb;
+
+MongoClient.connect(url, options, (err, db) => {
+    if (err) throw err;
+    const dbo = db.db("memedb");
+    dbo.createCollection("memes", (err, res) => {
+        if (err) throw err;
+        console.log("Meme Collection created.");
+    });
+    database = dbo;
+    memedb = database.collection("memes");
+});
+
 /** 
  * Let's outline the API calls that we will need.
  * 1) /sendmeme - POST request when the user finishes their meme and wants to upload it to the database.
@@ -46,9 +68,6 @@ app.post("/sendmeme", (req, res) => {
             if (data.success) {
                 const finalURL = data.data.url;
                 const meme = new Meme(finalURL, params.creator);
-                
-                // Add the meme to the database
-                tempData.push(meme);
                 res.status(200).send("Successful request.");
             } else {
                 res.status(500).send("API call to caption the image failed.");
