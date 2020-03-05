@@ -22,7 +22,7 @@ Part 4 (2/19) - [APIs, HTTP, and How the Web Works] - [Slides Presentation](http
 
 Part 5 (2/26) - [Storing Data with Databases (MongoDB)] - [Slides Presentation](http://acmurl.com/hackschool5) - [Project Starter-Code & Solution Code](https://github.com/acmucsd/hackschool-wi20/tree/project-pt5)
 
-Part 6 (3/04) - [Deploying with Heroku] - [Slides Presentation]
+Part 6 (3/04) - [Deploying with Heroku] - [Slides Presentation](http://acmurl.com/hackschool6)
 
 # Required Programs to Download for These Workshops
   
